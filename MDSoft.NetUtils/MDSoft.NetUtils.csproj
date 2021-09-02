@@ -1,0 +1,105 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net45;net46;net461;net472;net48;net50;net60;</TargetFrameworks>
+    <files>
+      <file src="bin\Release\net45\NetUtils.dll" target="lib\net45\NetUtils.dll" />
+      <file src="bin\Release\net46\NetUtils.dll" target="lib\net46\NetUtils.dll" />
+      <file src="bin\Release\net461\NetUtils.dll" target="lib\net461\NetUtils.dll" />
+      <file src="bin\Release\net47\NetUtils.dll" target="lib\net47\NetUtils.dll" />
+      <file src="bin\Release\net472\NetUtils.dll" target="lib\net472\NetUtils.dll" />
+      <file src="bin\Release\net48\NetUtils.dll" target="lib\net48\NetUtils.dll" />
+      <file src="bin\Release\net50\NetUtils.dll" target="lib\net50\NetUtils.dll" />
+      <file src="bin\Release\net60\NetUtils.dll" target="lib\net60\NetUtils.dll" />
+      <file src="bin\Release\netstandard2.0\NetUtils.dll" target="lib\netstandard2.0\NetUtils.dll" />
+      <file src="bin\Release\netstandard2.1\NetUtils.dll" target="lib\netstandard2.1\NetUtils.dll" />
+    </files>
+    <Version>0.1.50</Version>
+    <title>MDSoft.NetUtils</title>
+    <Authors>Damian Viktorovich Morozov</Authors>
+    <Copyright>Copyright (c) 2020 - 2021</Copyright>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/DamianMorozov/MDSoft.NuGet</projectUrl>
+    <tags>net network utils utilities</tags>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/DamianMorozov/MDSoft.NuGet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/DamianMorozov/MDSoft.NuGet</PackageProjectUrl>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Description>Network utilities</Description>
+    <PackageTags>net, utils, network, utilities</PackageTags>
+    <PackageReleaseNotes>## [0.1.050] - 2021-09-02
+### Added
+- Init repo
+- MDSoft.NetUtils project
+- MDSoft.NetUtilsTests project
+      </PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <AssemblyVersion>0.1.50.0</AssemblyVersion>
+    <FileVersion>0.1.50.0</FileVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net50|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net50|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net60|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net60|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net45'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net46'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net461'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net47'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net472'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net48'">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
