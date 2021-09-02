@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1.010] - 2021-09-02
+## [0.1.050] - 2021-09-02
 ### Added
 - Init repo
+- MDSoft.NetUtils project
+- MDSoft.NetUtilsTests project
