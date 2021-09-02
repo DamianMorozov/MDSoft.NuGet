@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+
+    <Description>Tests for network utilities</Description>
+
+    <Authors>Damian Viktorovich Morozov</Authors>
+
+    <Version>0.1.50</Version>
+
+    <Copyright>Copyright (c) 2020</Copyright>
+
+    <AssemblyName>NetUtilsTests</AssemblyName>
+
+    <RootNamespace>NetUtilsTests</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MDSoft.NetUtils\MDSoft.NetUtils.csproj" />
+  </ItemGroup>
+
+</Project>
