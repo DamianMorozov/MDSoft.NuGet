@@ -1,4 +1,7 @@
-﻿using System;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using System;
 using System.ComponentModel;
 using System.Net;
 using System.Net.Http;
@@ -138,11 +141,11 @@ namespace MDSoft.NetUtils
                 IsStop = false;
                 try
                 {
-                    using (var httpClient = await GetHttpClient(proxy))
+                    using (HttpClient httpClient = await GetHttpClient(proxy))
                     {
                         if (IsStop) return statusCode;
                         httpClient.Timeout = TimeSpan.FromMilliseconds(Timeout);
-                        var response = await httpClient.GetAsync(Host).ConfigureAwait(false);
+                        HttpResponseMessage response = await httpClient.GetAsync(Host).ConfigureAwait(false);
                         if (IsStop) return statusCode;
                         Log += $"Status code: {response.StatusCode}" + Environment.NewLine;
                         statusCode = response.StatusCode;
@@ -186,12 +189,12 @@ namespace MDSoft.NetUtils
                 return new HttpClient(new HttpClientHandler { UseProxy = false });
             }
 
-            var handler = new HttpClientHandler()
+            HttpClientHandler handler = new HttpClientHandler()
             {
                 UseProxy = true,
                 Proxy = new WebProxy(proxy.Host),
             };
-            var httpClient = new HttpClient(handler);
+            HttpClient httpClient = new HttpClient(handler);
             if (proxy.UseDefaultCredentials)
             {
                 handler.UseDefaultCredentials = true;

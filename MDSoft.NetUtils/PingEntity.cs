@@ -1,4 +1,7 @@
-﻿using System;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.NetworkInformation;
@@ -212,16 +215,16 @@ namespace MDSoft.NetUtils
                     IsStop = false;
                     do
                     {
-                        foreach (var host in Hosts)
+                        foreach (string host in Hosts)
                         {
                             try
                             {
-                                using (var ping = new Ping())
+                                using (Ping ping = new Ping())
                                 {
                                     if (IsStop) return;
-                                    var buffer = new byte[BufferSize];
-                                    var pingOptions = new PingOptions(Ttl, DontFragment);
-                                    var reply = ping.Send(host.Trim(), TimeoutPing, buffer, pingOptions);
+                                    byte[] buffer = new byte[BufferSize];
+                                    PingOptions pingOptions = new PingOptions(Ttl, DontFragment);
+                                    PingReply reply = ping.Send(host.Trim(), TimeoutPing, buffer, pingOptions);
                                     if (reply is null)
                                     {
                                         Log += "Reply is null" + Environment.NewLine;
