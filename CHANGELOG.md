@@ -51,7 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Init repo
 - MDSoft.NetUtils project
-  - Support platforms: netstandard2.0;netstandard2.1;net45;net46;net461;net472;net48;net50;net60;
+  - Support platforms: netstandard2.0;netstandard2.1;net45;net46;net461;net472;net48;net50;
   - HttpClientEntity
   - PingEntity
   - ProxyEntity

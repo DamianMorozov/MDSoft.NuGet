@@ -40,14 +40,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net60|AnyCPU'">
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net60|AnyCPU'">
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-
   <ItemGroup Condition="'$(TargetFramework)'=='net45'">
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

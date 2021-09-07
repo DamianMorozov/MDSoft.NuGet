@@ -22,7 +22,6 @@
 - net472
 - net48
 - net50
-- net60
 ```
 
 ## MDSoft.NetUtilsTests
