@@ -1,4 +1,7 @@
-# MDSoft.NetUtils packages
+# MDSoft.NetUtils packages - Network utils
+
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.NetUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.NetUtils/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.NetUtils.svg)](https://www.nuget.org/packages/MDSoft.NetUtils/)
 
 --------
 

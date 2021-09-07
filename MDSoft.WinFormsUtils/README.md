@@ -1,4 +1,7 @@
-# MDSoft.WinFormsUtils package
+# MDSoft.WinFormsUtils package - Utils for invoking WinForms conrols from async threads and tasks.
+
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.WinFormsUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.WinFormsUtils/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.WinFormsUtils.svg)](https://www.nuget.org/packages/MDSoft.WinFormsUtils/)
 
 --------
 
