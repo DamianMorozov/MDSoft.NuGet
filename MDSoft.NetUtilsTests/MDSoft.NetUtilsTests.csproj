@@ -9,7 +9,7 @@
 
     <Authors>Damian Viktorovich Morozov</Authors>
 
-    <Version>0.1.100</Version>
+    <Version>0.1.110</Version>
 
     <Copyright>Copyright (c) 2020 - 2021</Copyright>
 
@@ -34,6 +34,6 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <LangVersion>10.0</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
 </Project>

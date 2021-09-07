@@ -1,4 +1,7 @@
-﻿using MDSoft.NetUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.NetUtils;
 using NUnit.Framework;
 using System.Threading.Tasks;
 
@@ -45,9 +48,9 @@ namespace MDSoft.NetUtilsTests
         {
             Utils.MethodStart();
 
-            foreach (var timeout in EnumValues.GetInt())
+            foreach (int timeout in EnumValues.GetInt())
             {
-                foreach (var host in EnumValues.GetUri())
+                foreach (System.Uri host in EnumValues.GetUri())
                 {
                     Assert.DoesNotThrow(() => { _ = new HttpClientEntity(timeout, host); });
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => { _ = new HttpClientEntity(); }));
@@ -62,17 +65,17 @@ namespace MDSoft.NetUtilsTests
         {
             Utils.MethodStart();
 
-            foreach (var timeout in EnumValues.GetTimeoutMs())
+            foreach (int timeout in EnumValues.GetTimeoutMs())
             {
-                foreach (var host in EnumValues.GetUri())
+                foreach (System.Uri host in EnumValues.GetUri())
                 {
                     Assert.DoesNotThrow(() =>
                     {
                         TestContext.WriteLine($@"Assert.DoesNotThrow. timeout: {timeout}. host: {host}");
-                        var proxy = new ProxyEntity();
-                        var httpClient = new HttpClientEntity(timeout, host);
+                        ProxyEntity proxy = new ProxyEntity();
+                        HttpClientEntity httpClient = new HttpClientEntity(timeout, host);
                         TestContext.WriteLine($@"{httpClient.Settings}");
-                        var task = Task.Run(async () =>
+                        Task task = Task.Run(async () =>
                         {
                             await httpClient.OpenAsync(proxy).ConfigureAwait(true);
                         });
@@ -82,10 +85,10 @@ namespace MDSoft.NetUtilsTests
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() =>
                     {
                         TestContext.WriteLine($@"Assert.DoesNotThrow. timeout: {timeout}. host: {host}");
-                        var proxy = new ProxyEntity();
-                        var httpClient = new HttpClientEntity(timeout, host);
+                        ProxyEntity proxy = new ProxyEntity();
+                        HttpClientEntity httpClient = new HttpClientEntity(timeout, host);
                         TestContext.WriteLine($@"{httpClient.Settings}");
-                        var task = Task.Run(async () =>
+                        Task task = Task.Run(async () =>
                         {
                             await httpClient.OpenAsync(proxy).ConfigureAwait(true);
                         });
