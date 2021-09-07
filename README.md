@@ -6,6 +6,8 @@
 
 [MDSoft.WinFormsUtils](MDSoft.WinFormsUtils/README.md)
 
+[MDSoft.WpfUtils](MDSoft.WpfUtils/README.md)
+
 --------
 
 ## Repositories
