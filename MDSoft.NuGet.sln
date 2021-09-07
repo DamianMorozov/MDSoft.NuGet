@@ -14,6 +14,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDSoft.NetUtils", "MDSoft.N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDSoft.NetUtilsTests", "MDSoft.NetUtilsTests\MDSoft.NetUtilsTests.csproj", "{FA43B7BF-8091-453A-BBC1-23351E1F5A9D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDSoft.WinFormsUtils", "MDSoft.WinFormsUtils\MDSoft.WinFormsUtils.csproj", "{DAFA8549-61A7-47D9-9FD1-4816FB8B78A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDSoft.WinFormsUtilsTests", "MDSoft.WinFormsUtilsTests\MDSoft.WinFormsUtilsTests.csproj", "{7D113487-3F13-4881-AF45-75AF2FA0D3EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +32,14 @@ Global
 		{FA43B7BF-8091-453A-BBC1-23351E1F5A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA43B7BF-8091-453A-BBC1-23351E1F5A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA43B7BF-8091-453A-BBC1-23351E1F5A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAFA8549-61A7-47D9-9FD1-4816FB8B78A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAFA8549-61A7-47D9-9FD1-4816FB8B78A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAFA8549-61A7-47D9-9FD1-4816FB8B78A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAFA8549-61A7-47D9-9FD1-4816FB8B78A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D113487-3F13-4881-AF45-75AF2FA0D3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D113487-3F13-4881-AF45-75AF2FA0D3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D113487-3F13-4881-AF45-75AF2FA0D3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D113487-3F13-4881-AF45-75AF2FA0D3EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
