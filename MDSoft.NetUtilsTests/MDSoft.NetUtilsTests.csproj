@@ -9,9 +9,9 @@
 
     <Authors>Damian Viktorovich Morozov</Authors>
 
-    <Version>0.1.50</Version>
+    <Version>0.1.100</Version>
 
-    <Copyright>Copyright (c) 2020</Copyright>
+    <Copyright>Copyright (c) 2020 - 2021</Copyright>
 
     <AssemblyName>NetUtilsTests</AssemblyName>
 
@@ -33,4 +33,7 @@
     <ProjectReference Include="..\MDSoft.NetUtils\MDSoft.NetUtils.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
 </Project>
