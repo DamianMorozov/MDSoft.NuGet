@@ -1,4 +1,7 @@
-﻿using System.Reflection;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
@@ -31,5 +34,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.100.0")]
-[assembly: AssemblyFileVersion("0.1.100.0")]
+[assembly: AssemblyVersion("0.1.110.0")]
+[assembly: AssemblyFileVersion("0.1.110.0")]

@@ -1,4 +1,7 @@
-﻿using MDSoft.WinFormsUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.WinFormsUtils;
 using NUnit.Framework;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
@@ -23,7 +26,7 @@ namespace MDSoft.WinFormsUtilsTests
             TestContext.WriteLine(@"--------------------------------------------------------------------------------");
             TestContext.WriteLine($@"{nameof(Setup)} start.");
             _controls = new ConcurrentQueue<Control>();
-            for (var i = 0; i < 100; i++)
+            for (int i = 0; i < 100; i++)
             {
                 _controls.Enqueue(new Label());
                 _controls.Enqueue(new Button());

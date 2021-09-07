@@ -1,4 +1,7 @@
-﻿using MDSoft.WinFormsUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.WinFormsUtils;
 using NUnit.Framework;
 using System.Collections.Concurrent;
 using System.Drawing;
@@ -26,11 +29,11 @@ namespace MDSoft.WinFormsUtilsTests
         {
             Utils.MethodStart();
             _pictureBoxes = new ConcurrentQueue<PictureBox>();
-            for (var i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 _pictureBoxes.Enqueue(new PictureBox());
             }
-            var filePng = @"c:\Windows\ImmersiveControlPanel\images\splashscreen.png";
+            string filePng = @"c:\Windows\ImmersiveControlPanel\images\splashscreen.png";
             if (File.Exists(filePng))
             {
                 _image = Image.FromFile(filePng);
@@ -54,7 +57,7 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetBackgroundImage_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var pictureBox in _pictureBoxes)
+            foreach (PictureBox pictureBox in _pictureBoxes)
             {
                 Assert.DoesNotThrow(() => InvokePictureBox.SetBackgroundImage(pictureBox, _image));
                 Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokePictureBox.SetBackgroundImage(pictureBox, _image)));
@@ -66,7 +69,7 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetBitmap_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var pictureBox in _pictureBoxes)
+            foreach (PictureBox pictureBox in _pictureBoxes)
             {
                 Assert.DoesNotThrow(() => InvokePictureBox.SetBitmap(pictureBox, _bitmap));
                 Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokePictureBox.SetBitmap(pictureBox, _bitmap)));
@@ -78,7 +81,7 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetImage_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var pictureBox in _pictureBoxes)
+            foreach (PictureBox pictureBox in _pictureBoxes)
             {
                 Assert.DoesNotThrow(() => InvokePictureBox.SetImage(pictureBox, _bitmap));
                 Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokePictureBox.SetImage(pictureBox, _bitmap)));

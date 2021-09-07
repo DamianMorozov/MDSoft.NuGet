@@ -1,4 +1,7 @@
-﻿using MDSoft.WinFormsUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.WinFormsUtils;
 using NUnit.Framework;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
@@ -24,7 +27,7 @@ namespace MDSoft.WinFormsUtilsTests
         {
             Utils.MethodStart();
             _progressBars = new ConcurrentQueue<ProgressBar>();
-            for (var i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
                 _progressBars.Enqueue(new ProgressBar());
             Utils.MethodComplete();
         }
@@ -46,9 +49,9 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetValue_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var progressBar in _progressBars)
+            foreach (ProgressBar progressBar in _progressBars)
             {
-                foreach (var value in EnumValues.GetProgress())
+                foreach (ushort value in EnumValues.GetProgress())
                 {
                     Assert.DoesNotThrow(() => InvokeProgressBar.SetValue(progressBar, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeProgressBar.SetValue(progressBar, value)));
@@ -61,9 +64,9 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetMinimum_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var progressBar in _progressBars)
+            foreach (ProgressBar progressBar in _progressBars)
             {
-                foreach (var value in EnumValues.GetProgress())
+                foreach (ushort value in EnumValues.GetProgress())
                 {
                     Assert.DoesNotThrow(() => InvokeProgressBar.SetMinimum(progressBar, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeProgressBar.SetMinimum(progressBar, value)));
@@ -76,9 +79,9 @@ namespace MDSoft.WinFormsUtilsTests
         public void SetMaximum_DoesNotThrow()
         {
             Utils.MethodStart();
-            foreach (var progressBar in _progressBars)
+            foreach (ProgressBar progressBar in _progressBars)
             {
-                foreach (var value in EnumValues.GetProgress())
+                foreach (ushort value in EnumValues.GetProgress())
                 {
                     Assert.DoesNotThrow(() => InvokeProgressBar.SetMaximum(progressBar, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeProgressBar.SetMaximum(progressBar, value)));

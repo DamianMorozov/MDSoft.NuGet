@@ -1,4 +1,7 @@
-﻿using MDSoft.WinFormsUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.WinFormsUtils;
 using NUnit.Framework;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
@@ -22,7 +25,7 @@ namespace MDSoft.WinFormsUtilsTests
         {
             Utils.MethodStart();
             _controls = new ConcurrentQueue<Control>();
-            for (var i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 _controls.Enqueue(new Label());
                 _controls.Enqueue(new Button());
@@ -49,7 +52,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumValues.GetBool())
+                foreach (bool value in EnumValues.GetBool())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.SetEnabled(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.SetEnabled(control, value)));
@@ -64,7 +67,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumValues.GetString())
+                foreach (string value in EnumValues.GetString())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.SetText(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.SetText(control, value)));
@@ -79,7 +82,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumValues.GetString())
+                foreach (string value in EnumValues.GetString())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.AddText(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.AddText(control, value)));
@@ -94,7 +97,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumValues.GetBool())
+                foreach (bool value in EnumValues.GetBool())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.SetVisible(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.SetVisible(control, value)));
@@ -109,7 +112,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumWinForm.GetColor())
+                foreach (System.Drawing.Color value in EnumWinForm.GetColor())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.SetBackColor(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.SetBackColor(control, value)));
@@ -124,7 +127,7 @@ namespace MDSoft.WinFormsUtilsTests
             Utils.MethodStart();
             while (_controls.TryDequeue(out Control control))
             {
-                foreach (var value in EnumWinForm.GetColor())
+                foreach (System.Drawing.Color value in EnumWinForm.GetColor())
                 {
                     Assert.DoesNotThrow(() => InvokeControl.SetForeColor(control, value));
                     Assert.DoesNotThrowAsync(async () => await Task.Run(() => InvokeControl.SetForeColor(control, value)));

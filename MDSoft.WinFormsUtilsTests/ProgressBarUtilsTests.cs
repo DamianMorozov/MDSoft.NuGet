@@ -1,4 +1,7 @@
-﻿using MDSoft.WinFormsUtils;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using MDSoft.WinFormsUtils;
 using NUnit.Framework;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
@@ -25,7 +28,7 @@ namespace MDSoft.WinFormsUtilsTests
             TestContext.WriteLine(@"--------------------------------------------------------------------------------");
             TestContext.WriteLine($@"{nameof(Setup)} start.");
             _progressBars = new ConcurrentQueue<ProgressBar>();
-            for (var i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
                 _progressBars.Enqueue(new ProgressBar());
             TestContext.WriteLine($@"{nameof(Setup)} complete.");
         }
@@ -52,7 +55,7 @@ namespace MDSoft.WinFormsUtilsTests
         {
             TestContext.WriteLine(@"--------------------------------------------------------------------------------");
             TestContext.WriteLine($@"{nameof(SetState_DoesNotThrow)} start.");
-            foreach (var progressBar in _progressBars)
+            foreach (ProgressBar progressBar in _progressBars)
             {
                 Assert.DoesNotThrow(() => progressBar.SetState(1));
                 Assert.DoesNotThrowAsync(async () => await Task.Run(() => progressBar.SetState(1)));
