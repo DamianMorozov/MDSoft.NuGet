@@ -36,7 +36,7 @@ Example of usage:
 ```C#
 var task = Task.Run(async () =>
 {
-    await Task.Delay(TimeSpan.FromMilliseconds(_timeout)).ConfigureAwait(true);
+    await Task.Delay(TimeSpan.FromMilliseconds(1_000)).ConfigureAwait(true);
     InvokeControl.SetVisible(button, false);
 });
 ```

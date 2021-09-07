@@ -1,4 +1,7 @@
-﻿using System.Reflection;
+﻿// This is an open source non-commercial project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++, C#, and Java: http://www.viva64.com
+
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace MDSoft.WinFormsUtils
@@ -7,21 +10,21 @@ namespace MDSoft.WinFormsUtils
     {
         public static void SetDoubleBuffered(this Control control, bool value)
         {
-            var pi = typeof(Control).GetProperty("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic);
+            PropertyInfo pi = typeof(Control).GetProperty("DoubleBuffered", BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic);
             if (pi != null)
             {
                 pi.SetValue(control, value, null);
 
-                var mi = typeof(Control).GetMethod("SetStyle", BindingFlags.Instance | BindingFlags.InvokeMethod | BindingFlags.NonPublic);
-                mi?.Invoke(control, new object[]
+                MethodInfo miSetStyle = typeof(Control).GetMethod("SetStyle", BindingFlags.Instance | BindingFlags.InvokeMethod | BindingFlags.NonPublic);
+                miSetStyle?.Invoke(control, new object[]
                 {
                     ControlStyles.UserPaint |
                     ControlStyles.AllPaintingInWmPaint |
                     ControlStyles.OptimizedDoubleBuffer, true
                 });
 
-                mi = typeof(Control).GetMethod("UpdateStyles", BindingFlags.Instance | BindingFlags.InvokeMethod | BindingFlags.NonPublic);
-                mi?.Invoke(control, null);
+                MethodInfo miUpdateStyles = typeof(Control).GetMethod("UpdateStyles", BindingFlags.Instance | BindingFlags.InvokeMethod | BindingFlags.NonPublic);
+                miUpdateStyles?.Invoke(control, null);
             }
         }
     }
