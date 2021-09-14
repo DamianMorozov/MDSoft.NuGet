@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.111] - 2021-09-14
+### Changed
+- MDSoft.NetUtils project
+  - Updated tags & description
+- MDSoft.WinFormsUtils project
+  - Updated tags & description
+- MDSoft.WpfUtils project
+  - Updated tags & description
+
 ## [0.1.110] - 2021-09-07
 ### Added
 - MDSoft.WinFormsUtils project

@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net45;net46;net461;net47;net471;net472;net48;</TargetFrameworks>
-    <Version>0.1.110</Version>
+    <Version>0.1.111</Version>
     <title>MDSoft.WpfUtils</title>
     <Authors>Damian Viktorovich Morozov</Authors>
     <Copyright>Copyright (c) 2020 - 2021</Copyright>
@@ -18,12 +18,12 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/DamianMorozov/MDSoft.NuGet</PackageProjectUrl>
     <PackageLicenseFile></PackageLicenseFile>
-    <Description>WinForms utilities</Description>
-    <PackageTags>winforms, network, utilities</PackageTags>
-    <PackageReleaseNotes>## [0.1.110] - 2021-09-07</PackageReleaseNotes>
+    <Description>WPF utilities</Description>
+    <PackageTags>wpf utilities</PackageTags>
+    <PackageReleaseNotes>## [0.1.111] - 2021-09-14</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>0.1.110.0</AssemblyVersion>
-    <FileVersion>0.1.110.0</FileVersion>
+    <AssemblyVersion>0.1.111</AssemblyVersion>
+    <FileVersion>0.1.111</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 

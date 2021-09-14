@@ -3,10 +3,16 @@
 --------
 
 [MDSoft.NetUtils](MDSoft.NetUtils/README.md)
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.NetUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.NetUtils/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.NetUtils.svg)](https://www.nuget.org/packages/MDSoft.NetUtils/)
 
 [MDSoft.WinFormsUtils](MDSoft.WinFormsUtils/README.md)
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.WinFormsUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.WinFormsUtils/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.WinFormsUtils.svg)](https://www.nuget.org/packages/MDSoft.WinFormsUtils/)
 
 [MDSoft.WpfUtils](MDSoft.WpfUtils/README.md)
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.WpfUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.WpfUtils/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.WpfUtils.svg)](https://www.nuget.org/packages/MDSoft.WpfUtils/)
 
 --------
 
