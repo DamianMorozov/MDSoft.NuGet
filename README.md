@@ -19,5 +19,8 @@
 ## Repositories
 [MDSoft.Examples](https://github.com/DamianMorozov/MDSoft.Examples "github.com")
 
-# Support
+## Status
+![Alt](https://repobeats.axiom.co/api/embed/621991b603d7e7d8e0212c14d1ff39cdfceac03b.svg "Repobeats analytics image")
+
+## Support
 Please, if this tools has been useful for you click on the `star` button.
