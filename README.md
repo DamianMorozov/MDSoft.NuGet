@@ -14,6 +14,10 @@
 [![NuGet version](https://img.shields.io/nuget/v/MDSoft.WpfUtils.svg?style=flat)](https://www.nuget.org/packages/MDSoft.WpfUtils/)
 [![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.WpfUtils.svg)](https://www.nuget.org/packages/MDSoft.WpfUtils/)
 
+[MDSoft.Wmi](MDSoft.Wmi/README.md)
+[![NuGet version](https://img.shields.io/nuget/v/MDSoft.Wmi.svg?style=flat)](https://www.nuget.org/packages/MDSoft.Wmi/)
+[![NuGet downloads](https://img.shields.io/nuget/dt/MDSoft.Wmi.svg)](https://www.nuget.org/packages/MDSoft.Wmi/)
+
 --------
 
 ## Repositories

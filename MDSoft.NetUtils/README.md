@@ -6,22 +6,23 @@
 --------
 
 ## MDSoft.NetUtils
-- HttpClientEntity
-- PingEntity
-- ProxyEntity
+- MdHttpClientModel
+- MdPingModel
+- MdProxyModel
 
 **Multi-targeted platforms**
 ```
-- netstandard2.0
-- netstandard2.1
-- net45
 - net46
 - net461
 - net47
 - net471
 - net472
 - net48
-- net50
+- net481
+- netstandard2.0
+- netstandard2.1
+- net60
+- net70
 ```
 
 ## MDSoft.NetUtilsTests
@@ -31,19 +32,19 @@
 - Utils
 
 ## How to use
-### Example of HttpClientEntity usage
+### Example of MdHttpClientModel usage
 ```C#
-var proxy = new ProxyEntity();
-var httpClient = new HttpClientEntity(timeout: 50, host: "http://google.com/");
+var proxy = new MdProxyModel();
+var httpClient = new MdHttpClientModel(timeout: 50, host: "http://google.com/");
 var task = Task.Run(async () =>
 {
     await httpClient.OpenAsync(proxy).ConfigureAwait(true);
 });
 task.Wait();
 ```
-### Example of PingEntity usage
+### Example of MdPingModel usage
 ```C#
-var ping = new PingEntity(timeoutPing: 100, bufferSize: 32, ttl: 128, dontFragment: true, timeoutTask: 1000, useRepeat: false);
+var ping = new MdPingModel(timeoutPing: 100, bufferSize: 32, ttl: 128, dontFragment: true, timeoutTask: 1000, useRepeat: false);
 ping.Hosts.Add("google.com");
 ping.Hosts.Add("microsoft.com");
 ping.Hosts.Add("yandex.com");
@@ -55,9 +56,9 @@ task.Wait();
 TestContext.WriteLine($@"{ping.Settings}");
 TestContext.WriteLine($@"{ping.Log}");
 ```
-### Example of ProxyEntity usage
+### Example of MdProxyModel usage
 ```C#
-var proxy = new NetUtils.ProxyEntity(use, useDefaultCredentials, host, port, domain, username, password);
+var proxy = new NetUtils.MdProxyModel(use, useDefaultCredentials, host, port, domain, username, password);
 ```
 
 --------

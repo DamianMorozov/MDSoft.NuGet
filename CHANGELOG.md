@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.040] - 2023-04-20
+### Changed
+- Projects targetings
+- Refactored names
+### Added
+- MDSoft.Wmi project
+
 ## [0.1.111] - 2021-09-14
 ### Changed
 - MDSoft.NetUtils project
@@ -61,9 +68,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Init repo
 - MDSoft.NetUtils project
   - Support platforms: netstandard2.0;netstandard2.1;net45;net46;net461;net472;net48;net50;
-  - HttpClientEntity
-  - PingEntity
-  - ProxyEntity
+  - MdHttpClientModel
+  - MdPingModel
+  - MdProxyModel
 - MDSoft.NetUtilsTests project
   - HttpClientEntityTests
   - PingEntityTests
