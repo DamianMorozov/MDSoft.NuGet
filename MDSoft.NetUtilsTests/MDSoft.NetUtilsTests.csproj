@@ -4,7 +4,7 @@
     <IsPackable>false</IsPackable>
     <Description>Tests for network utilities</Description>
     <Authors>Damian Viktorovich Morozov</Authors>
-    <Version>0.2.40.0</Version>
+    <Version>0.2.50.0</Version>
     <Copyright>Copyright (c) 2020 - 2023</Copyright>
     <AssemblyName>MDSoft.NetUtilsTests</AssemblyName>
     <RootNamespace>MDSoft.NetUtilsTests</RootNamespace>
